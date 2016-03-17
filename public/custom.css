@@ -1,0 +1,56 @@
+.board {
+    margin: auto;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 500px;
+}
+
+.cat_gif_box {
+	margin: auto;
+	width: 100%;
+	padding-left: 500px;
+}
+
+.btn {
+	width: 100px;
+	height: 100px;
+	padding-top: 35px;
+	margin-left: 25px;
+}
+
+.btn-success {
+	pointer-events: none;
+}
+
+.btn-danger {
+	pointer-events: none;
+}
+
+.cat {
+  position: fixed;
+  top: 50%;
+  left: 450px;
+  width: 500px;
+  margin: auto;
+}
+
+h1 {
+	font-size: 80px;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.disabled {
+	pointer-events: none;
+}
+
+.done {
+	margin-top: -69.5px;
+}
+
+.btn-warning {
+	margin-left: 8%;
+}

@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="bootstrap.css" type="text/css" /> 
+<link rel="stylesheet" href="custom.css" type="text/css" /> 
+
+<% cat_gif_urls = ["http://www.catgifpage.com/gifs/318.gif",
+				   "http://www.pride.com/sites/pride.com/files/2015/06/24/money.gif",
+				   "http://45.media.tumblr.com/bafffbe0cf23af4eaa3ccb173548ff7b/tumblr_nvz1c4S0aR1uuyy36o1_400.gif",
+				    "http://i.imgur.com/z1fLa.gif",
+				    "http://i.imgur.com/5TrXF.gif",
+				    "http://i.imgur.com/e4hdYom.gif",
+				    "http://i.imgur.com/5g0sI.gif",
+				    "http://i.imgur.com/SWGyk.gif",
+				    "http://i.imgur.com/psu515W.gif"
+				] %>
+
+<% url = cat_gif_urls.sample %>
+
+<h1> Cat's Game </h1>
+
+<img class="cat" src="<%= url %>">
+
+<br><br>
+
+<div class="cat_gif_box">
+	<a href="/" class="btn btn-warning">Play Again?</a>
+	<a href="/mode/2" class="btn btn-warning extreme">Extreme<br>Mode?</a>
+</div>
+
+<% session.clear %>

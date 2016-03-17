@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="bootstrap.css" type="text/css" /> 
+<link rel="stylesheet" href="custom.css" type="text/css" /> 
+
+<h2> You Lose! </h2>
+
+<div class="board done">
+	<% session[:tiles].each {|key, value| %>
+		<% if value == "blank" %>	
+			<a href="/<%= key %>" class="btn btn-info disabled"></a>
+		<% elsif value == "computer" %>
+			<a href="/<%= key %>" class="btn btn-danger"></a>
+		<% elsif value == "human" %>
+			<a href="/<%= key %>" class="btn btn-success"></a>
+		<%end%>
+
+		<% if key % 3 == 0 %>
+			<br><br>
+		<% end %>
+	<% } %>
+
+	<a href="/" class="btn btn-warning">Play Again?</a>
+	<a href="/mode/2" class="btn btn-warning extreme">Extreme<br>Mode?</a>
+	<% session.clear %>
+</div>

@@ -1,0 +1,10 @@
+This game was made using Ruby and Sinatra. 
+I used HTML and CSS for the styling.
+
+Spent around 3 hours coding this.
+
+It's also hosted at tiktaktoe.herokuapp.com.
+
+To run it locally, in a terminal: ruby app.rb
+
+If I could spend more than 3 hours on this I would combine the win, lose, and index view into one view, improve the functions that check for a win, improve styling on the cats game page, and make this look better at different screen sizes. 
